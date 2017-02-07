@@ -1,0 +1,33 @@
+.lines-container {
+    border: 1px solid black;
+    height: 75px;
+    width: 550px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+}
+.line {
+    display: flex;
+}
+
+.line .message {
+    font-family: monospace;
+    border: none;
+    flex-grow: 1;
+    white-space: nowrap;
+}
+.line .message.no-click {
+    pointer-events: none;
+}
+.line .message:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.current-step-marker {
+    color: #2546ff;
+    font-weight: bold;
+    font-family: monospace;
+    width: 22px;
+    flex-srink: 0;
+}
